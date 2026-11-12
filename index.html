@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .c {
+        background-color: orange;
+      }
+    </style>
+    <script>
+        function login(){
+            const email = document.getElementById("idEmail").value
+            const password = document.getElementById("idPassword").value
+            if (email==="admin" && password==="1234"){
+                idMessage.innerHTML = "Welcome"
+            }
+            else{
+                idMessage.innerHTML = "Access Denied"
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <h1>Login Form</h1>
+    <p>
+      <input type="text" id="idEmail" name="email" class="c" />
+    </p>
+    <p>
+      <input type="password" id="idPassword" name="password" class="c" />
+    </p>
+    <p>
+      <button onclick="login()">Login</button>
+    </p>
+    <hr>
+    <div id="idMessage"></div>
+  </body>
+</html>
